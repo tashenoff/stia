@@ -4,6 +4,7 @@
     width: 400px;
     padding: 20px;
     background-image: url('/img/bgform.jpg');
+    border-radius: 2px;
     img{
       width: 20%;
     }
@@ -11,8 +12,14 @@
 
   &__bottom{
     font-size: 12px;
+    background-color: #000;
     letter-spacing: 2px;
-    background-image: url('/img/footerbg.jpg');
+    font-family: 'Montserrat', sans-serif;
+
+    //background-image: url('/img/footerbg.jpg');
+    p{
+      color:$secondary;
+    }
   }
   &__top{
     display: flex;
@@ -36,6 +43,10 @@ footer{
 .arrow{
   &__bottom{
 
+    img{
+      width: 100%;
+    }
+
     bottom: 100px;
     position: absolute;
     left: calc(50% - 26px);
@@ -44,5 +55,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 }

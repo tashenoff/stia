@@ -12,12 +12,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 
+<script src="https://www.jqueryscript.net/demo/Number-Increment-Animations-with-jQuery-spincrement/jquery.spincrement.js"></script>
+
 <script type="text/javascript">
+
     $(document).ready(function() {
         $(".fancybox").fancybox();
 
@@ -46,7 +51,7 @@
                     items:3
                 },
                 1000:{
-                    items:1
+                    items:5
                 }
             }
         })
@@ -75,20 +80,20 @@
                 <a class="nav-link" href="/">Главная <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about-us.html">
+                <a class="nav-link" href="#">
                     О компании</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="menu.html">
+                <a class="nav-link" href="#">
                     Услуги</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="gall.html">
+                <a class="nav-link" href="#">
                     Вакансии</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="contact.html">Контакты</a>
+            <a class="nav-link" href="#">Контакты</a>
             </li>
 
 
@@ -116,7 +121,7 @@
    <div class="home-video__text">
                  <h3 class="display-5 text-uppercase">Успешные решения и долгосрочный результат.</br>
                     Исполнение в оптимально сжатые сроки</h3>
-<p class="lead">Наш приоритет - надежность и качество оказываемых услуг!</p>
+
    </div>
 
 <!--    <div id="down" class="home-video__arrow"><img src="img/arrow.svg" alt=""></div>-->
@@ -125,6 +130,7 @@
             </section>
             <section id="about" class="about">
                 <div class="container-fluid px-0">
+    <h5 class="p-5 text-center text-uppercase">Наш приоритет - надежность и качество оказываемых услуг!</h5>
     <div class="row no-gutters">
         <div class="col-lg-6 col-12">
             <div class="about__content ">
@@ -233,6 +239,133 @@
 </div>
             </section>
 
+            <section id="about-text">
+                <div class="container py-5">
+    <h3 class="text-center text-uppercase my-5">Цифры</h3>
+    <div class="row benefits__inner text-center">
+
+
+                             <div class="col-lg-3 col-6">
+
+                    <h1 class="benefits__number font-weight-bold">10000</h1>
+                    <p class="benefits__title">Название блока</p>
+                </div>
+
+        <div class="col-lg-3 col-6">
+
+                    <h1 class="benefits__number font-weight-bold">500</h1>
+                    <p class="benefits__title">Название блока</p>
+                </div>
+
+        <div class="col-lg-3 col-6">
+
+                    <h1 class="benefits__number font-weight-bold">15</h1>
+                    <p class="benefits__title">Название блока</p>
+                </div>
+
+        <div class="col-lg-3 col-6">
+
+            <h1 class="benefits__number font-weight-bold">165</h1>
+            <p class="benefits__title">Название блока</p>
+        </div>
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                var show = true;
+                var countbox = ".benefits__inner";
+                $(window).on("scroll load resize", function () {
+                    if (!show) return false;
+                    var w_top = $(window).scrollTop();
+                    var e_top = $(countbox).offset().top;
+                    var w_height = $(window).height();
+                    var d_height = $(document).height();
+                    var e_height = $(countbox).outerHeight();
+                    if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+                        $('.benefits__number').css('opacity', '1');
+                        $('.benefits__number').spincrement({
+                            thousandSeparator: "",
+                            duration: 1200
+                        });
+
+                        show = false;
+                    }
+                });
+
+            });
+        </script>
+           </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-2"><img class="w-100" src="/img/logo.svg" alt=""></div>
+        <div class="col-lg-10">
+            <p class="py-5"><b>ТОО «Стройинжиниринг Астана»</b>, в рамках исполнения условий Договора № US 238/2016 от 10 июня 2016 года и Договора № US 239/2016 от 10 июня 2016 года с АО «КазТрансОйл» уведомляет о начале разработки изменений к:
+
+    национальному стандарту СТ РК 2080-2010 «Магистральные нефтепроводы. Пожарная безопасность»;
+    предварительному национальному стандарту ПСТ РК 43-2015 «Магистральные нефтепроводы. Инструкция по учету нефти» и его переработки в СТ РК.  </p>
+
+
+        </div>
+</div>
+</div>
+
+
+<div class="container">
+    <h3 class="text-center text-uppercase mt-5">Нам доверяют</h3>
+    <div class="row">
+
+        <div class="col-lg-12 py-5">
+
+            <div class="owl-carousel owl-theme">
+
+                <div class="guest__item">
+                    <img src="img/adid.png" alt="">
+                </div>
+
+                <div class="guest__item">
+                    <img src="img/adid.png" alt="">
+
+                </div>
+
+
+                <div class="guest__item">
+                    <img src="img/adid.png" alt="">
+
+                </div>
+
+
+                <div class="guest__item">
+                    <img src="img/adid.png" alt="">
+
+                </div>
+
+
+                <div class="guest__item">
+                    <img src="img/adid.png" alt="">
+
+                </div>
+
+
+                <div class="guest__item">
+                    <img src="img/adid.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+            </section>
+
                      <section id="contacs">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -263,10 +396,10 @@
 
     </div>
     <div id="top" class="btn btn-secondary arrow__bottom">
-        <img src="img/arrow_up.png" alt="">
+        <img src="img/top.svg" alt="">
 
     </div>
-    <div class="footer__bottom bg-primary">
+    <div class="footer__bottom">
         <div class="container">
             <div class="py-5 text-uppercase text-white d-flex">
        <p>copyright 2020</p>
