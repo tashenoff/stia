@@ -9,7 +9,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
 const imagemin = require('gulp-imagemin');
-const babel = require('gulp-babel');
+
 const browserSync = require('browser-sync').create();
 const changed = require('gulp-changed');
 const prettier = require('gulp-prettier');
