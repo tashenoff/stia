@@ -141,13 +141,7 @@ function jsProcess() {
 }
 
 // Компиляция JS  для Production
-function jsProcessBuild() {
-  return gulp
-    .src(['src/js/*.js'])
-    .pipe(babel())
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js'));
-}
+
 
 // Наблюдение за изменениями
 function watchFiles() {
@@ -171,7 +165,7 @@ const build = gulp.series(
     cssProcess,
     scssProcessBuild,
     // libsJsProcess,
-    jsProcessBuild,
+
     fontsProcess,
     imgProcessBuild,
     imgProcessWebp,
