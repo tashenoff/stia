@@ -34,7 +34,8 @@ function browserSyncInit(done) {
     host: 'localhost',
     port: 9000,
     logPrefix: 'Webit_Dev',
-  });
+  });1
+
   done();
 }
 
